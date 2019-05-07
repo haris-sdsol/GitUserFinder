@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GitUserFinder</string>
+    <string name="username_or_email">Username/ Email</string>
+    <string name="search_icon_description">search icon to find user</string>
+    <string name="find_user_on_github">Find User On GitHub</string>
+    <string name="profile_picture_of_user">Profile picture of user</string>
+    <string name="see_more">See More</string>
+    <string name="sorry_no_match_found">Sorry, No match found!</string>
+    <string name="user_searching_message">Search any registered github user and see complete detail</string>
+    <string name="search">Search</string>
+</resources>
