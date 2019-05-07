@@ -9,4 +9,7 @@ public interface RestApiService {
 
     @GET("/users/{username}")
     fun findUser(@Path("username") username: String): Call<UserInfo>
+
+    @GET("/users/{username}/followers")
+    fun getFollowers(@Path("username") username: String): Call<List<UserInfo>>
 }

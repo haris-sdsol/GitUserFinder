@@ -8,4 +8,5 @@
     <string name="sorry_no_match_found">Sorry, No match found!</string>
     <string name="user_searching_message">Search any registered github user and see complete detail</string>
     <string name="search">Search</string>
+    <string name="back_button_description">back arrow button to navigate previous screen</string>
 </resources>

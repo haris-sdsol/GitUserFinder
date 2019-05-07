@@ -22,7 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".views.search_user.view.SearchingActivity"/>
+        <activity android:name=".views.search_user.view.SearchingActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden"
+        />
+        <activity android:name=".views.user_detail.view.DetailActivity"/>
     </application>
 
 </manifest>

@@ -28,6 +28,7 @@ class SearchingViewModel(val myApplication: Application) : AndroidViewModel(myAp
     var mProgressDialog: SingleLiveEvent<Boolean> = SingleLiveEvent<Boolean>()
     var mUserInfo: MutableLiveData<UserInfo> = MutableLiveData<UserInfo>()
     var mSearchBar: ObservableField<String> = ObservableField<String>()
+    var apiStatus: MutableLiveData<String> = MutableLiveData()
 
     fun getUserDetail() {
         if (MyApplication.hasNetwork()) {
@@ -65,6 +66,7 @@ class SearchingViewModel(val myApplication: Application) : AndroidViewModel(myAp
         mProgressDialog.value = false
         if (response.isSuccessful) {
             mUserInfo.value = response.body()
-        }
+        } else
+            apiStatus.value = response.message()
     }
 }
