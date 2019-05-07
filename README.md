@@ -28,8 +28,9 @@ A simple project based on MVVM clean architecture to find a user from github usi
 - DataBinding
 - Github Api
 - Retrofit2 & Gson for constructing the REST API
-- Glide for loading images
+- Glide for loading and caching images
 - Recyclerview for listing
+-CardView to show a beautiful view of user details on a card.
 ```
 
 ## Author
